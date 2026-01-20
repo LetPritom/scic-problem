@@ -1,4 +1,3 @@
-
 //1: reverse string
 
 function reverseString(str) {
@@ -108,7 +107,24 @@ const pushEve =  evenNumbersOfArray([2,4,5,6,47,52])
 console.log(pushEve)
 
 
-// 8 factorial number
+// 8 first latter capital
+
+function capitalWords(str) {
+  const words = str.split(" ");
+  let result = [];
+
+  for (let word of words) {
+    result.push(word[0].toUpperCase() + word.slice(1));
+  }
+
+  return result.join(" ");
+}
+
+const capital = capitalWords('capital hello')
+console.log(capital)
+
+
+// 9 factorial number
 
 function factorialCalculation(num) {
   let result = 1;
@@ -124,7 +140,9 @@ const fact = factorialCalculation(10);
 console.log(fact)
 
 
-// ping pong print 
+
+
+//10 ping pong print 
 
 function pingPongPrint(num) {
   for (let i = 1; i <= num; i++) {
