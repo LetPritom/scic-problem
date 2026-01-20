@@ -1,4 +1,4 @@
-//1: reverse string
++//1: reverse string
 
 function reverseString(str) {
     const reverse = str.split("").reverse().join("");
